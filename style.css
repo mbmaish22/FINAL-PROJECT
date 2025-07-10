@@ -1,0 +1,83 @@
+/* Base layout */
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #eef4fc;
+}
+
+header {
+    background-color: #023e8a;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.intro, .content, .contact {
+    background-color: #a1bfd9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #666;
+    margin-bottom: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.card, .flip-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #444;
+    padding: 15px;
+}
+
+.card img, .flip-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
